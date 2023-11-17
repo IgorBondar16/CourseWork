@@ -7,4 +7,49 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="BMX.png" />
+    <None Remove="UI\Icons\detail.png" />
+    <None Remove="UI\Icons\detail_bmx.png" />
+    <None Remove="UI\Icons\socialNetwork.png" />
+    <None Remove="UI\Icons\TodoList.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="App_Start\" />
+    <Folder Include="Content\" />
+    <Folder Include="Conrollers\" />
+    <Folder Include="Domain\" />
+    <Folder Include="fonts\" />
+    <Folder Include="Models\" />
+    <Folder Include="UI\Animation\" />
+    <Folder Include="UI\Controls\" />
+    <Folder Include="UI\Localization\" />
+    <Folder Include="UI\Pages\" />
+    <Folder Include="Views\" />
+    <Folder Include="Scripts\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="BMX.png" />
+    <Content Include="UI\Icons\detail.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UI\Icons\detail_bmx.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UI\Icons\socialNetwork.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UI\Icons\TodoList.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="2.1.4" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.7.1" />
+  </ItemGroup>
+
 </Project>
